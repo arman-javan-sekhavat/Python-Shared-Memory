@@ -7,9 +7,9 @@ This repository provides a high-speed and reliable channel for communication bet
 
 * The resulting communication channel consists of two nodes, the Writer and the Reader and is simplex (unidirectional). Each of these nodes is implemented in a separate Python interpreter. Two Python classes are designed, one for each of these nodes.
 
+## Example Usage
 Note: The Writer script must be executed before the Reader script.
 
-## Example Usage
 ```python
 #------------------------------------- Writer node -------------------------------------
 
