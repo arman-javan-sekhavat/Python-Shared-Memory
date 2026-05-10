@@ -14,6 +14,7 @@ Note: The Writer script must be executed before the Reader script.
 #------------------------------------- Writer node -------------------------------------
 
 import PyWinSHM
+import numpy as np
 
 # Creating the writer object
 writer = PyWinSHM.Writer(shape=(10, 10), dtype=np.float32, shm_name="SharedMemoryBlock",
@@ -35,6 +36,7 @@ writer.disconnect()
 #------------------------------------- Reader node -------------------------------------
 
 import PyWinSHM
+import numpy as np
 
 # Creating the reader object
 reader = PyWinSHM.Reader(shape=(10, 10), dtype=np.float32, shm_name="SharedMemoryBlock",
