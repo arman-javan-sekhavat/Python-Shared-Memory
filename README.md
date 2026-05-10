@@ -17,7 +17,7 @@ import PyWinSHM
 import numpy as np
 
 # Creating the writer object
-writer = PyWinSHM.Writer(shape=(10, 10), dtype=np.float32, shm_name="SharedMemoryBlock",
+writer = PyWinSHM.Writer(shape=(2,), dtype=np.float32, shm_name="SharedMemoryBlock",
                           event1_name="SyncEvent1", event2_name="SyncEvent2")
 
 # Data (Numpy arrays) to be transferred
@@ -39,7 +39,7 @@ import PyWinSHM
 import numpy as np
 
 # Creating the reader object
-reader = PyWinSHM.Reader(shape=(10, 10), dtype=np.float32, shm_name="SharedMemoryBlock",
+reader = PyWinSHM.Reader(shape=(2,), dtype=np.float32, shm_name="SharedMemoryBlock",
                 event1_name="SyncEvent1", event2_name="SyncEvent2")
 
 for i in range(2):
